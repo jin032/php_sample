@@ -15,7 +15,7 @@ if ($_POST["submit"]) {
 			if ($error) {	            	           
 			 $result='<div class="alert alert-danger"><strong>There were error(s) in your form:</strong>'.$error.'</div>';	            			
 			} else {	            	            
-				if (mail("test@greenhost.org.uk", "Comment from website!", "Name: ". $_POST['name']."	                     	                     
+				if (mail("jin032@yahoo.com", "Comment from website!", "Name: ". $_POST['name']."	                     	                     
 					Email: ".$_POST['email']."	                     	                     
 					Comment: ".$_POST['comment'])) {	                     	                     
 					$result='<div class="alert alert-success"><strong>Thank you!</strong> I\'ll be in touch.</div>';	                     	                     
@@ -143,7 +143,8 @@ if ($_POST["submit"]) {
                     	<h1>My email form</h1>	
 				 <?php echo $result; ?>	 
 				 <p class="lead">Please get in touch - I'll get back to you as soon as I can.</p>
-				  <form method="post">	! <div class="form-group">
+				  <form method="post">
+				  	<div class="form-group">
 				   <label for="name">Your Name:</label>
 				   	<input type="text" name="name" class="form-control" placeholder="Your Name" value="<?php echo $_POST['name']; ?>" />
 				   </div>
@@ -153,7 +154,9 @@ if ($_POST["submit"]) {
 				     	 </div>	
 				     	 <div class="form-group">
 				     	  <label for="comment">Your Comment:</label>	
-				     	  <textarea class="form-control" name="comment"><?php echo $_POST['comment']; ?></textarea>
+				     	  <textarea class="form-control" name="comment">
+				     	  	<?php echo $_POST['comment']; ?>
+				     	  </textarea>
 </div>
  <input type="submit" name="submit" class="btn btn-success btn-lg" value="Submit" />
 </form>
