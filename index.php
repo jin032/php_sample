@@ -18,10 +18,6 @@
     		padding-bottom:20px;			
     	}
 
-    body{
-
-      background-color: #4C827C;
-    }
     .nav{
       float: right;
     }

@@ -29,7 +29,7 @@ if ($_POST["submit"]) {
 <!doctype html>
 <html>
 <head>
-<title> comment me</title>
+<title> comment</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,13 +52,61 @@ if ($_POST["submit"]) {
 		padding-bottom: 20px;
 	}
 
+	.slider{
+
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.slider img{
+
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+
 </style>
 </head>
 <body>
+
+	    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="" class="navbar-brand">Saddam Akram-Portfolio</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li><a href="">Page 1</a></li>
+              <li><a href="comment.php">Comment</a></li>
+              <li><a href="">Page 3</a></li>
+              <li><a href="">Page 4</a></li>
+
+          </ul>
+      </div>
+
+
+
+    </div>
+  </div>
+
+    <div class="slider">
+
+    <img id="1" src="style/aboutus.jpg" border="0" alt="web" />
+
+</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 emailform">
-				<h1> Comment Me </h1>
+				<h1> Drop a line for me.. </h1>
 				<?php 
 				echo $result; 
 				?>
